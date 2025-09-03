@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# ResQ: A Full-Stack Disaster Management Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ResQ is a real-time, full-stack disaster management application designed to streamline rescue and relief operations. It provides administrative authorities with the tools to manage rescue camps, define safety zones on an interactive map, and monitor user locations, while offering a sophisticated chatbot for user assistance.
 
-## Available Scripts
+**Live Demo:** [https://resq-70a08.web.app](https://resq-70a08.web.app)
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+*   **Role-Based Authentication:** Secure login and registration for both users and administrative authorities.
+*   **Interactive Map Dashboard:** Admins can create, update, and delete rescue camps and safety zones directly on the map.
+*   **Real-time User Tracking:** Authorities can view the locations of users in real-time to coordinate rescue efforts.
+*   **Advanced RAG Chatbot:** A sophisticated chatbot that provides context-aware responses to user queries. It is powered by the Google Gemini API and a Vertex AI Vector Search database.
+*   **Serverless Architecture:** The backend is built on a scalable, serverless architecture using Firebase Cloud Functions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   **Frontend:** React, React Router, Google Maps API
+*   **Backend:** Node.js, Firebase Cloud Functions
+*   **Database:** Firestore (NoSQL)
+*   **AI & Machine Learning:**
+    *   Google Gemini API
+    *   Retrieval-Augmented Generation (RAG)
+    *   Vertex AI Vector Search
+*   **Deployment:** Firebase Hosting
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running, follow these simple steps.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*   Node.js and npm installed
+*   A Firebase project with Firestore, Hosting, and Functions enabled
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/your_username/resq.git
+    ```
+2.  Install NPM packages for the frontend
+    ```sh
+    npm install
+    ```
+3.  Install NPM packages for the backend
+    ```sh
+    cd functions && npm install
+    ```
+4.  Create a `.env` file in the root directory and add your Firebase and Google Maps API keys:
+    ```
+    REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+    REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+    ```
+5.  Set up your Gemini API key as a secret in Firebase:
+    ```sh
+    firebase functions:secrets:set GEMINI_API_KEY
+    ```
 
-### `npm run eject`
+### Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Start the React development server:
+    ```sh
+    npm start
+    ```
+2.  To deploy the application:
+    ```sh
+    npm run build
+    firebase deploy

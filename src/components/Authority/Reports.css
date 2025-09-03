@@ -1,0 +1,39 @@
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.chart-container {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
+
+.demographics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.demographics-container .chart-container {
+  height: 30vh;
+}
+
+.performance-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.performance-container .chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.performance-container .btn-group {
+  margin-bottom: 1rem;
+}

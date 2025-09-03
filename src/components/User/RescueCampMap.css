@@ -1,0 +1,98 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-gray-900);
+  color: var(--text-gray-100);
+}
+
+.back-to-dashboard-button {
+  background-color: var(--bg-indigo-600);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+.rescue-camp-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  flex-grow: 1;
+  min-height: 0; /* This is the key fix */
+}
+
+.map-panel {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.info-panel {
+  background-color: var(--bg-gray-800);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-button {
+  background-color: var(--bg-indigo-600);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.nav-button:hover {
+  background-color: #4338CA;
+}
+
+.info-panel h2 {
+  margin-top: 0;
+  color: var(--text-gray-100);
+}
+
+.camp-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-gray-700) var(--bg-gray-800);
+}
+
+.camp-details-container {
+  background-color: var(--bg-gray-900);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.camp-details-container h3 {
+  margin-top: 0;
+  color: var(--text-gray-100);
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--text-gray-300);
+}
+
+.detail-value {
+  color: var(--text-gray-100);
+}

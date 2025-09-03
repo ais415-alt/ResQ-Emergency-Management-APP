@@ -1,0 +1,200 @@
+.sidebar-header .home-link {
+  color: var(--text-gray-100);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.new-chat-button {
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.chatbot-page-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-gray-900);
+  color: var(--text-gray-100);
+}
+
+.chatbot-content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-gray-900);
+}
+
+.chatbot-sidebar {
+  width: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--bg-gray-700);
+}
+
+.sidebar-header {
+  margin-bottom: 2rem;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  min-height: 0; /* This is the key fix */
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-gray-700) var(--bg-gray-900);
+}
+
+
+.sidebar-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: var(--bg-gray-900);
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background-color: var(--bg-gray-700);
+  border-radius: 4px;
+}
+
+.chat-history-item {
+  background-color: var(--bg-gray-800);
+  border: 1px solid var(--bg-gray-700);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.sidebar-header .sidebar-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: var(--text-gray-100);
+}
+
+.chat-history-box {
+  border-radius: 8px;
+}
+
+.history-title {
+  font-weight: bold;
+  margin: 0;
+  color: var(--text-gray-100);
+  font-size: 0.9rem;
+}
+
+.history-date {
+  font-size: 0.7rem;
+  color: var(--text-gray-400);
+  margin: 0;
+}
+
+.chatbot-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chatbot-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.helpline-button {
+  background-color: var(--bg-red-600);
+  color: var(--text-gray-100);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.helpline-button:hover {
+  background-color: #B91C1C;
+}
+
+.chatbot-greeting {
+  background-color: var(--bg-gray-800);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+.chatbot-wrapper {
+  margin-top: auto;
+  width: 100%;
+  max-width: 800px;
+  align-self: center;
+}
+
+.helpline-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.helpline-popup {
+  background-color: var(--bg-gray-800);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.helpline-popup h3 {
+  margin-top: 0;
+  color: var(--text-gray-100);
+}
+
+.helpline-popup p {
+  color: var(--text-gray-300);
+}
+
+.helpline-popup button {
+  background-color: var(--bg-indigo-600);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.helpline-popup button:hover {
+  background-color: #4338CA;
+}
