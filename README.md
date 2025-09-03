@@ -17,14 +17,24 @@ ResQ is a real-time, full-stack disaster management application designed to stre
 
 ## Tech Stack
 
-*   **Frontend:** React, React Router, Google Maps API
-*   **Backend:** Node.js, Firebase Cloud Functions
-*   **Database:** Firestore (NoSQL)
+*   **Frontend:**
+    *   **Core:** React, React Router DOM for routing.
+    *   **Mapping:** `@react-google-maps/api` for interactive maps.
+    *   **Data Visualization:** `Chart.js` and `react-chartjs-2` for creating charts and graphs.
+    *   **UI & Utilities:**
+        *   `html2canvas` and `jspdf` for generating PDF reports.
+        *   `qrcode.react` for generating QR codes.
+*   **Backend:**
+    *   **Runtime:** Node.js
+    *   **Framework:** Firebase Cloud Functions for serverless architecture.
+*   **Database:**
+    *   **Primary:** Firestore (NoSQL) for real-time data storage.
 *   **AI & Machine Learning:**
-    *   Google Gemini API
-    *   Retrieval-Augmented Generation (RAG)
-    *   Vertex AI Vector Search
-*   **Deployment:** Firebase Hosting
+    *   **LLM:** Google Gemini API for generative AI capabilities.
+    *   **Search:** Retrieval-Augmented Generation (RAG) with Vertex AI Vector Search for the advanced chatbot.
+*   **Deployment & Hosting:**
+    *   Firebase Hosting for the frontend application.
+    *   Firebase for backend services (Authentication, Functions, Firestore).
 
 ## Project Structure
 
@@ -95,3 +105,27 @@ To get a local copy up and running, follow these simple steps.
     ```sh
     npm run build
     firebase deploy
+    ```
+
+## Usage
+
+Here are a few examples of how ResQ can be used:
+
+*   **For Users:** A user caught in a flood can open the app, see the nearest rescue camps on the map, and send an emergency alert with their precise location to the authorities. They can also use the chatbot to ask for safety information.
+*   **For Authorities:** An administrator can monitor the real-time locations of users in an affected area, create new rescue camps, and broadcast safety alerts to all users. They can also generate reports on incidents and resource distribution.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
