@@ -11,6 +11,9 @@ ResQ is a real-time, full-stack disaster management application designed to stre
 *   **Real-time User Tracking:** Authorities can view the locations of users in real-time to coordinate rescue efforts.
 *   **Advanced RAG Chatbot:** A sophisticated chatbot that provides context-aware responses to user queries. It is powered by the Google Gemini API and a Vertex AI Vector Search database.
 *   **Serverless Architecture:** The backend is built on a scalable, serverless architecture using Firebase Cloud Functions.
+*   **Emergency Alerts:** Users can send emergency alerts with their location to the authorities.
+*   **Incident Reporting:** Users can report incidents with details and images.
+*   **Resource Management:** Authorities can manage and allocate resources like food, water, and medical supplies.
 
 ## Tech Stack
 
@@ -22,6 +25,32 @@ ResQ is a real-time, full-stack disaster management application designed to stre
     *   Retrieval-Augmented Generation (RAG)
     *   Vertex AI Vector Search
 *   **Deployment:** Firebase Hosting
+
+## Project Structure
+
+The project is organized into two main parts: the frontend React application and the backend Firebase Cloud Functions.
+
+```
+resq/
+├── functions/              # Backend Firebase Cloud Functions
+│   ├── index.js            # Main entry point for all functions
+│   ├── chatbot.js          # Logic for the RAG chatbot
+│   └── ...                 # Other backend functions
+├── public/                 # Public assets and index.html
+├── src/                    # Frontend React application source code
+│   ├── components/         # React components
+│   │   ├── Auth/           # Authentication components (Login, SignUp)
+│   │   ├── Authority/      # Components for the admin dashboard
+│   │   ├── User/           # Components for the user dashboard
+│   │   └── Shared/         # Components used by both roles
+│   ├── context/            # React context for state management
+│   ├── firebase.js         # Firebase configuration and initialization
+│   └── App.js              # Main application component with routing
+├── .gitignore              # Files to be ignored by Git
+├── firebase.json           # Firebase project configuration
+├── package.json            # Project dependencies and scripts
+└── README.md               # This file
+```
 
 ## Getting Started
 
